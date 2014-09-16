@@ -5,7 +5,7 @@
   <title>RPSLS</title>
 
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
   </script>
@@ -21,8 +21,11 @@
 
 <body>
 
-<h1>Rock Paper Scissors Lizard Spock</h1>
-
+<h1 id="title">Rock Paper Scissors Lizard Spock</h1>
+<div id="welcomeMessage"></div>
+    <form id="nameForm">
+      <input id="nameInput" value="Click and type in your name here!" onclick="if (this.defaultValue==this.value) this.value=''" type="text" autocomplete="off">
+    </form>
     <section id="images"> 
       <div class="image-container"> 
        <img data-pick="rock" src="/rock.png">
@@ -32,9 +35,9 @@
        <img data-pick="spock" src="/spock.png">
       </div>
     </section>
-    <section id="victoryMessage">
+    <ul id="victoryMessage">
       
-    </section>
+    </ul>
   
 
 </body>

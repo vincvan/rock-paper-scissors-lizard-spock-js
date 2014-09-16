@@ -1,5 +1,6 @@
 body {
 	background: url("/congruent_outline.png");
+	font-family:'Permanent Marker';
 }
 
 #images {
@@ -8,25 +9,79 @@ body {
 	vertical-align:middle;
  	margin:auto;
  	text-align:center;
-	padding:3em 0;
+	padding:2em 0;
+	margin-top: 2em;
 }
 
 #images img {
 	width:15%;
 	padding:5px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: 0.3s opacity ease;
+	-webkit-filter: saturate(10) invert(1);
 }
 
+#images img:hover {
+	opacity: 1;
+}
+
+#flashMessage {
+	color: rgba(255, 10, 4,0.6);
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
 h1 {
 	color:rgba(255,255,255,0.6);
-	font-family:'Arvo';
 	font-weight:700;
 	text-align:center;
 	font-size:3em;
-	margin:1.5em;
+	margin:1em;
+}
+
+h3{
+	color:rgba(255,255,255,0.6);
+	font-weight:700;
+	text-align:center;
+	font-size:2em;
+	height: 32px;
 }
 
 .image-container {
 	display: inline-block;
 	margin:auto;
 }
+
+form {
+	text-align: center;
+	margin: 2em;
+}
+
+#nameInput {
+    border: none;
+    outline: none;
+    width: 600px;
+    background-color: transparent;
+    font-size:1.5em;
+	color:rgba(255,255,255,0.6);
+ 	text-align:center;
+ 	margin:auto;
+ 	font-family:'Permanent Marker';
+
+}
+
+#victoryMessage {
+	color:rgba(255,255,255,0.6);
+	font-weight:300;
+	text-align:center;
+	font-size:1.5em;
+	list-style-type: none;
+}
+
+#victoryMessage li:first-child {
+	color:red;
+
+}
+
 

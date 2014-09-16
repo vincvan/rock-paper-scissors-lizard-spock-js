@@ -27,11 +27,11 @@ Game.prototype.PAIRS = {
   };
 
 Game.prototype.FIGHTING_STYLE = {
-  	rock: { lizard: "crushes", scissors: "crushes" },
-  	paper: { spock: "disproves", rock: "covers"},
-  	spock: { rock: "vapourises", scissors: "smashes" },
-  	lizard: { spock: "poisons", paper: "eats"},
-  	scissors: { paper: "cuts", lizard: "decapitates" }
+  	rock: { lizard: "crushed", scissors: "crushed" },
+  	paper: { spock: "disproved", rock: "covered"},
+  	spock: { rock: "vapourised", scissors: "smashed" },
+  	lizard: { spock: "poisoned", paper: "ate"},
+  	scissors: { paper: "cut", lizard: "decapitated" }
   };
 
 Game.prototype.victoryMessage = function() {
