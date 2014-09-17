@@ -32,13 +32,18 @@ $(document).ready(function(){
 		player2.picks(pick)
 	  	var $victoryMessage = $("<li>" + game.victoryMessage() + "</li>")
 	  	$victoryMessage.prependTo("#victoryMessage")
+	  	if (game.winner() === player2){
+	  		$("#victoryMessage li:first-child").css('color', 'green');
+	  		$("#victoryMessage li:first-child").animate({'font-size': '120%'});
+	  	}
+	  	else {
 	  	$("#victoryMessage li:first-child").css('color', 'rgba(255, 10, 4,0.6)');
-	  	$("#victoryMessage li:first-child").animate({'font-size': '150%'})
 	  	$("#victoryMessage li").eq(1).css({'color':'rgba(255,255,255,0.6)', 'font-size': '100%'})
 	  	$("#victoryMessage li").eq(5).fadeOut(1000, function(){
 	  		$this.remove()
 	  	});
 	  };
+	}
 	});
 
 });
